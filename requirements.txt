@@ -1,0 +1,46 @@
+# =============================================================================
+# Engine ML Project — Python Dependencies  (TensorFlow-FREE build)
+# =============================================================================
+# Python 3.11+ required
+# Install: pip install -r requirements.txt
+#
+# TensorFlow has been REMOVED — all ANN/DNN/MLP models use scikit-learn's
+# MLPRegressor, which avoids the Windows DLL/AppControl policy error.
+# =============================================================================
+
+# ── Core Scientific Stack ────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# ── Visualisation ────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Machine Learning ─────────────────────────────────────────────────────────
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# ── Gradient Boosting Libraries (no TF dependency) ──────────────────────────
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# ── Explainability ───────────────────────────────────────────────────────────
+shap>=0.43.0
+
+# ── GUI ──────────────────────────────────────────────────────────────────────
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.0
+
+# ── Excel Export ─────────────────────────────────────────────────────────────
+openpyxl>=3.1.0
+
+# ── PDF Export ───────────────────────────────────────────────────────────────
+reportlab>=4.0.0
+
+# =============================================================================
+# NOTE: TensorFlow is intentionally excluded.
+# The ANN, DNN, and MLP models in this project use scikit-learn's
+# MLPRegressor — identical architecture, no DLL issues on Windows.
+# =============================================================================
